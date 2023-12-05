@@ -15,5 +15,7 @@ public class TestScript : MonoBehaviour
 
         Debug.Log("Hello World");
 
+        Debug.Log("Hello Unity");
+
     }
 }
