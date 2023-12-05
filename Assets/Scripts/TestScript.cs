@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
-    //±ê Å×½ºÆ®
     private void Start()
     {
-        
+        int a = 10;
+
+        Debug.Log(a);
+
+        //Console.WriteLine(a);
+
     }
 }
