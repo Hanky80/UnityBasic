@@ -52,7 +52,10 @@ public class CubeMouse : MonoBehaviour
 
 			}
 
-			if (isClear) print("정답입니다.");
+			if (isClear)
+			{
+				print("정답입니다.");
+			}
 
 		}
     }

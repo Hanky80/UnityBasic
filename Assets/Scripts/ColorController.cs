@@ -19,4 +19,12 @@ public class ColorController : MonoBehaviour
 		targetRenderer.material.color = targetColor;
 	}
 
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.K))
+		{
+			//
+		}
+	}
+
 }

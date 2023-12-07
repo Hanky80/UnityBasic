@@ -10,7 +10,7 @@ public class Cube : MonoBehaviour
 
 	public Color answerColor;
 
-	private void Start()
+	public void Start()
 	{
 		if (isAnswer)
 		{

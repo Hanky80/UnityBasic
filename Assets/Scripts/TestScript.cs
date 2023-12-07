@@ -54,12 +54,28 @@ public class TestScript : MonoBehaviour
 
 	public Object objectVariable; //유니티 내에서 사용되는 객체는 모두 할당 가능
 
-	public List<int> intList;
+	public int[] intArray;// Inpector에서 할당한 값이 자동으로 (Unity에 의해서) 할당됨
+	public List<int> intList; //LinkedList ... .... ... ...
 
+	public List<GameObject> gameObjectList;
 
+	public void Awake()//접근지정자도 변경 가능하고, 따로 호출도 가능
+	{
+		Debug.Log("Awake");
+	}
 	private void Start()
 	{
-		print(privateIntager); 
+		Awake();
+
+		Debug.Log("Start");
+		//print("Start");
+
+		foreach (GameObject gameObject in gameObjectList) {
+
+			print(gameObject.name);
+
+		}
+
 	}
 
 }
