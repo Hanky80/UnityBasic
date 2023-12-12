@@ -45,6 +45,8 @@ public class RandomTest : MonoBehaviour
 
 			//일정 시간마다 색깔이 바뀌면서 Capsule이 다른 방향으로 이동하도록 해보세요.
 			//moveDirection의 값을 랜덤으로 생성
+			moveDirecion = Random.insideUnitSphere * 3;
+
 			yield return new WaitForSeconds(1f);
 		}
 	}
@@ -54,6 +56,7 @@ public class RandomTest : MonoBehaviour
 	private void Update()
 	{
 		//moveDirection으로 이동
+		transform.Translate(moveDirecion * Time.deltaTime);
 	}
 
 }

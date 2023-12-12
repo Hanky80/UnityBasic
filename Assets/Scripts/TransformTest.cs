@@ -50,12 +50,7 @@ public class TransformTest : MonoBehaviour
 		//transform.rotation = newDegree;
 
 
-		//zDegree = transform.rotation.eulerAngles.z;
-		//zDegree += degreePerSecond * Time.deltaTime;
-		//Vector3 newEulerAngle = new Vector3(0, 0, zDegree);
-		//transform.rotation = Quaternion.Euler(newEulerAngle);
-
-		//transform.Rotate(0, 0, degreePerSecond * Time.deltaTime);
+		
 
 		Move();
 		Rotate();
@@ -77,6 +72,11 @@ public class TransformTest : MonoBehaviour
 
 	private void Rotate()
 	{
+		//zDegree = transform.rotation.eulerAngles.z;
+		//zDegree += degreePerSecond * Time.deltaTime;
+		//Vector3 newEulerAngle = new Vector3(0, 0, zDegree);
+		//transform.rotation = Quaternion.Euler(newEulerAngle);
+
 		transform.Rotate(0, 0, degreePerSecond * Time.deltaTime);
 	}
 
